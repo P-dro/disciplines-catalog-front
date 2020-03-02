@@ -1,19 +1,46 @@
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
+<div>
+    <nav style="background-color: #2E3C59; height: 120px;">
+        <div class="row">
+            <div class="nav-wrapper col s6">
+                <img style="display: block;
+                padding: 15px;
+                height: 60px;
+                -webkit-box-sizing: none;
+                box-sizing: none;" src="../../assets/image/logo.png" alt="" srcset="">
+            </div>
+            <div class="valign-wrapper right" style="margin: 15px;">
+                <i class="material-icons">account_circle</i>
+                <select id="select-nav-home-id" class="browser-default">
+                    <option value="" disabled selected>Firstname Lastname</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+</div>
+<nav style="background-color: #F5F5F5; margin-top: -30px;">
+    <div class="row">
+        <div class="second-nav-home">
+            <select class="browser-default select-nav-home">
+                <option value="" disabled selected>Matéria</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default select-nav-home">
+                <option value="" disabled selected>Série</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <select class="browser-default select-nav-home">
+                <option value="" disabled selected>Professor(a)</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
     </div>
 </nav>
-
-<ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-</ul>

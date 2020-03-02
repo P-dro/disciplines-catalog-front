@@ -1,0 +1,39 @@
+nav {
+    background-color: #2E3C59;
+    height: auto;
+}
+
+#select-nav-home-id {
+    background-color: #2E3C59;
+    width: 100%;
+    border: #2E3C59;
+    height: 3rem;
+    color: white;
+}
+
+#select-nav-home-id ::focus {
+    outline: none;
+}
+
+.select-nav-home {
+    margin: 10px;
+    border-radius: 5px;
+    border: solid #44444445 1px;
+    width: max-content;
+    height: min-content;
+    font-size: small;
+}
+
+.second-nav-home {
+    display: inline-flex;
+    margin-left: 40%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: unset;
+    box-sizing: unset;
+}
+
+.option-menu-home :hover {
+    color: #E1995A!important;
+}
