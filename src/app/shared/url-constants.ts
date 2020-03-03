@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-const CONTEXT = 'http://6ed64513.ngrok.io/api';
+const CONTEXT = 'http://localhost:7071/api';
 
 @Injectable()
 export class UrlConstants {

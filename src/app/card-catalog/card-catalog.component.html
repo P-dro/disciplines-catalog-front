@@ -1,54 +1,29 @@
-<div class="col s9" style="margin-top: -7px;">
-    <div class="row">
-        <div class="col s2 m5 l3" style="display: inline-flex;">
-            <ng-container *ngFor="let res of responseSchoolDisciplines let i = index">
-                <div class=" card white" style="margin-right: 15px;">
-                    <div style="background-color: #D5741B;">
+<div>
+    <div class="col s9">
+        <div class="row">
+            <ng-container *ngFor="let res of disciplines$ | async">
+                <div class="col s10 m5 l3">
+                    <div class=" card white">
+                        <div class="card-catalog-card-title">
+                            <p class="card-catalog-content-card">
+                                <i class="material-icons">dvr</i>
+                                {{res.schoolDiscipline}}
+                            </p>
+                        </div>
 
-                        <p style="
-                    display: flex;
-                    width: max-content;
-                    padding: 10px 24px 10px 40px;
-                    color: cornsilk;
-                    font-family: serif;
-                    font-weight: bold;
-                    
-                    
-                    "><i class="material-icons">dvr</i>{{res.schoolDiscipline}}</p>
-                    </div>
-                    <div class="card-content white" style="padding: 10px; display: inline-flex;">
-                        <i class="material-icons">star</i>
-                        <p style="color: rgba(0,0,0,0.60); 
-                    font-family: sans-serif;
-                    margin-left: 10px;
-                    width: max-content;
-                    
-                    ">Ano</p>
-                    </div>
-                    <div class="card-content white" style="padding: 10px; display: inline-flex;">
-                        <i class="material-icons">star</i>
-                        <p style="color: rgba(0,0,0,0.60); 
-                    font-family: sans-serif;
-                    margin-left: 10px;
-                    width: max-content;
-                    
-                    ">Professor(a) Nome </p>
-                    </div>
-                    <div class="card-content white" style="padding: 10px; display: inline-flex;">
-                        <i class="material-icons">star</i>
-                        <p style="color: rgba(0,0,0,0.60); 
-                    font-family: sans-serif;
-                    margin-left: 10px;
-                    width: max-content;                    
-                    ">Conteúdos Cadastrados</p>
-                    </div>
-                    <div class="card-action center">
-                        <a class="waves-effect  btn"
-                            style="background-color: #2E3C5B;     padding: 0px 50px;">Acessar</a>
+
+                        <div class="card-content white" style="padding: 10px; display: inline-flex;">
+                            <i class="material-icons">star</i>
+                            <p class="card-catalog-text-content">Conteúdos Cadastrados</p>
+                        </div>
+                        <div class="card-action center">
+                            <a class="waves-effect  btn"
+                                style="background-color: #2E3C5B;     padding: 0px 50px;">Acessar</a>
+                        </div>
                     </div>
                 </div>
             </ng-container>
         </div>
+        <a class="btn-floating btn-large waves-effect waves-light red right"><i class="material-icons">add</i></a>
     </div>
 </div>
-<a class="btn-floating btn-large waves-effect waves-light red right"><i class="material-icons">add</i></a>

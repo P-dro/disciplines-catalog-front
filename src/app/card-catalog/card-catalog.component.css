@@ -1,0 +1,23 @@
+.card-catalog-content-card {
+    display: flex;
+    width: max-content;
+    padding: 10px 24px 10px 40px;
+    color: cornsilk;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.card {
+    margin-right: 15px;
+}
+
+.card-catalog-card-title {
+    background-color: #D5741B;
+}
+
+.card-catalog-text-content {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: sans-serif;
+    margin-left: 10px;
+    width: max-content;
+}
